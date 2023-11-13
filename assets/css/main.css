@@ -1,0 +1,88 @@
+@import url('../fonts/Space_Grotesk/SpaceGrotesk.ttf');
+
+@font-face {
+  font-family: 'SpaceGrotesk';
+  src: url('../fonts/Space_Grotesk/SpaceGrotesk.ttf') format('truetype');
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'SpaceGrotesk', sans-serif;
+  background-color: black;
+}
+
+#scoreboard {
+  position: absolute;
+  color: white;
+  padding: 8px;
+  user-select: none;
+}
+
+#game-over {
+  display: none;
+  position: absolute;
+  background-color: white;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 16px;
+  width: 100%;
+  max-width: 500px;
+  text-align: center;
+  border-radius: 8px;
+}
+
+#game-over .title {
+  font-size: 16px;
+  font-weight: 500;
+  color: gray;
+  margin-bottom: 6px;
+}
+
+#game-over .score {
+  font-size: 48px;
+}
+
+#game-over .restart {
+  color: white;
+  background-color: blue;
+  margin-top: 16px;
+  padding: 8px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#start-game {
+  position: absolute;
+  background-color: white;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 16px;
+  width: 100%;
+  max-width: 500px;
+  text-align: center;
+  border-radius: 8px;
+}
+
+#start-game .score {
+  font-size: 48px;
+}
+
+#start-game .start {
+  color: white;
+  background-color: blue;
+  margin-top: 16px;
+  padding: 8px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
